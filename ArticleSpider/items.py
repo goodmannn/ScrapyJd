@@ -17,6 +17,8 @@ class ArticlespiderItem(scrapy.Item):
 class DongItem(scrapy.Item):
     id = scrapy.Field()
     img_url = scrapy.Field()
+    img_url_sash = scrapy.Field()
     price = scrapy.Field()
     name = scrapy.Field()
     commit_num = scrapy.Field()
+    img_path = scrapy.Field()

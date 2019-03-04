@@ -71,7 +71,8 @@ DOWNLOADER_MIDDLEWARES = {
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
     'ArticleSpider.pipelines.ArticlespiderPipeline': 300,
-    'scrapy.pipelines.images.ImagesPipeline': 301,
+    'ArticleSpider.pipelines.DongImgPipeline': 2,
+    # 'scrapy.pipelines.images.ImagesPipeline': 301,
 }
 
 IMAGES_URLS_FIELD = "img_url"
