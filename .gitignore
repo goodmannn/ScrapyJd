@@ -2,3 +2,4 @@ Pipfile
 Pipfile.lock
 .idea/
 .scrapy/
+.ArticleSpider/images
