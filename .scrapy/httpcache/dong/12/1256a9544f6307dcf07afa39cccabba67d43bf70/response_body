@@ -1,1 +1,0 @@
-{"error": 400, "type": "ScriptError", "description": "Error happened while executing Lua script", "info": {"error": "'end' expected near <eof>", "type": "LUA_INIT_ERROR", "line_number": 1, "source": "[string \"function main(splash, args) --splash.response...\"]", "message": "[string \"function main(splash, args) --splash.response...\"]:1: 'end' expected near <eof>"}}
