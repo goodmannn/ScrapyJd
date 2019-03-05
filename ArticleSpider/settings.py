@@ -70,7 +70,7 @@ DOWNLOADER_MIDDLEWARES = {
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-    'ArticleSpider.pipelines.ArticlespiderPipeline': 300,
+    'ArticleSpider.pipelines.ArticlespiderPipeline': 1,
     'ArticleSpider.pipelines.DongImgPipeline': 2,
     # 'scrapy.pipelines.images.ImagesPipeline': 301,
 }

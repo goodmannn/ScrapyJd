@@ -6,7 +6,7 @@
 # See: https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 from scrapy.pipelines.images import ImagesPipeline
 from ArticleSpider.utils.common import get_md5
-import pymysql
+from ArticleSpider.models import product
 
 
 class ArticlespiderPipeline(object):
@@ -14,7 +14,8 @@ class ArticlespiderPipeline(object):
         url = item.get('img_url', '')
         img_url_sash = get_md5(url[0])
         item['img_url_sash'] = img_url_sash
-
+        db = product.Product()
+        db.add(item)
         return item
 
 
